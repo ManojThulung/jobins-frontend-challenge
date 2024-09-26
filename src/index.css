@@ -6,3 +6,23 @@
 * {
   box-sizing: border-box;
 }
+
+.form-input {
+  @apply w-full focus:outline-primary border-2 border-secondary-light outline-[2px] duration-150 ease-in shadow-sm py-2 px-3 rounded-[5px] text-secondary/80;
+}
+
+.logo-loading {
+  animation: logoAnimation 2s ease-in-out infinite;
+}
+
+@keyframes logoAnimation {
+  0% {
+    transform: rotate(0deg) scale(1) translateY(0); /* Start position */
+  }
+  40% {
+    transform: rotate(180deg) scale(1.2) translateY(10px); /* Half spin */
+  }
+  100% {
+    transform: rotate(360deg) scale(1) translateY(0); /* Full spin */
+  }
+}
