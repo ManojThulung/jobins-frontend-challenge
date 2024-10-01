@@ -1,8 +1,8 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
-import Layout from "./Layout";
 import { Logo } from "../assets/icon";
+import Layout from "./Layout/Layout";
 
 const PrivateRoute = () => {
   const { isLoggedIn, loading } = useAuth();

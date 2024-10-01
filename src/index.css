@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+.btn-ghost {
+  @apply h-9 w-9 rounded-full flex items-center justify-center transition-all ease-in duration-150 hover:bg-secondary-light/20;
+}
+
 .form-input {
   @apply w-full focus:outline-primary border-2 border-secondary-light outline-[2px] duration-150 ease-in shadow-sm py-2 px-3 rounded-[5px] text-secondary/80;
 }
