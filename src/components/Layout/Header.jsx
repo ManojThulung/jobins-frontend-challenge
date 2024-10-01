@@ -9,7 +9,7 @@ const Header = () => {
   const headerTitle = formatHeaderText(route.pathname);
 
   return (
-    <header className="flex justify-between">
+    <header className="flex justify-between items-center pb-3">
       <h1 className="text-2xl font-bold items-center">{headerTitle}</h1>
       <div className="flex gap-4 items-center">
         <Notification />

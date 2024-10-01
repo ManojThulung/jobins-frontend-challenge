@@ -11,6 +11,10 @@ import BellIcon from "./Icons/bell.svg?react";
 import LogoutIcon from "./Icons/logout.svg?react";
 import ProfileIcon from "./Icons/proifle.svg?react";
 import SettingIcon from "./Icons/setting.svg?react";
+import BusinessFianceIcon from "./Icons/business-and-finance.svg?react";
+import YenIcon from "./Icons/yen.svg?react";
+import ArrowUpIcon from "./Icons/arrow-up.svg?react";
+import ChevronUpIcon from "./Icons/chevron-up.svg?react";
 
 export {
   Logo,
@@ -26,4 +30,8 @@ export {
   LogoutIcon,
   ProfileIcon,
   SettingIcon,
+  BusinessFianceIcon,
+  YenIcon,
+  ArrowUpIcon,
+  ChevronUpIcon,
 };

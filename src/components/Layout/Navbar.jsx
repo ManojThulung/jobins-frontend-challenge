@@ -7,7 +7,9 @@ const Navbar = () => {
   const [isCollapse, setIsCollapse] = useState(false);
 
   return (
-    <aside className={`p-4  ${isCollapse ? "w-auto" : "w-[260px]"}`}>
+    <aside
+      className={`hidden xl:block p-4  ${isCollapse ? "w-auto" : "w-[260px]"}`}
+    >
       <nav>
         <div className="flex items-center justify-between gap-1 pb-2.5 relative">
           <div className="flex flex-grow items-center justify-start gap-1.5">

@@ -1,3 +1,5 @@
+import { AuFlag, BrFlag, USFlag } from "../assets/image";
+
 export const NotificationList = [
   {
     title: "New Order Received",
@@ -22,5 +24,42 @@ export const NotificationList = [
     description:
       "A new user, John Doe, has registered on the platform. Welcome them and review their profile.",
     time: "1 day ago",
+  },
+];
+
+export const TotalSalesReprot = [
+  {
+    title: "Total Sales & Costs",
+    period: "Last 7 days",
+    cost: "$350K",
+    rate: "8.56K",
+  },
+];
+
+export const TotalProfitReprot = [
+  { title: "Total Profit", period: "Last 7 days", cost: "50K", rate: "12%" },
+];
+
+export const CountriesReport = [
+  {
+    name: "United States",
+    image: USFlag,
+    totalNumber: "30k",
+    isIncrease: true,
+    rate: "25.8%",
+  },
+  {
+    name: "Brazil",
+    image: BrFlag,
+    totalNumber: "26k",
+    isIncrease: false,
+    rate: "16.2%",
+  },
+  {
+    name: "Australia",
+    image: AuFlag,
+    totalNumber: "17k",
+    isIncrease: false,
+    rate: "11.9%",
   },
 ];

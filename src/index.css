@@ -15,6 +15,10 @@
   @apply w-full focus:outline-primary border-2 border-secondary-light outline-[2px] duration-150 ease-in shadow-sm py-2 px-3 rounded-[5px] text-secondary/80;
 }
 
+.card {
+  @apply bg-white rounded-[16px];
+}
+
 .logo-loading {
   animation: logoAnimation 2s ease-in-out infinite;
 }
