@@ -15,6 +15,7 @@ import BusinessFianceIcon from "./Icons/business-and-finance.svg?react";
 import YenIcon from "./Icons/yen.svg?react";
 import ArrowUpIcon from "./Icons/arrow-up.svg?react";
 import ChevronUpIcon from "./Icons/chevron-up.svg?react";
+import SearchIcon from "./Icons/search.svg?react";
 
 export {
   Logo,
@@ -34,4 +35,5 @@ export {
   YenIcon,
   ArrowUpIcon,
   ChevronUpIcon,
+  SearchIcon,
 };

@@ -7,7 +7,9 @@ const TotalSalesCard = ({ sales }) => {
         <BusinessFianceIcon />
       </div>
 
+      {/* Vertical line ---------- */}
       <div className="h-full w-[1px] bg-secondary-light/50 rounded-[2px]" />
+
       <div className="w-[59%] flex flex-col items-center justify-center">
         <div>
           <h1 className="font-semibold text-lg">{sales.title}</h1>
