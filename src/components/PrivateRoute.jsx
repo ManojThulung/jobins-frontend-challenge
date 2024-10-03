@@ -10,7 +10,7 @@ const PrivateRoute = () => {
   if (loading) {
     return (
       <div className="min-h-screen p-5 bg-light flex items-center justify-center">
-        <Logo className="h-12 w-12 logo-loading" />
+        <Logo className="h-12 w-12 animate-spin" />
       </div>
     );
   }

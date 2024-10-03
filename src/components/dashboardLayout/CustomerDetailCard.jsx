@@ -1,10 +1,6 @@
 import CountUp from "react-countup";
 
-export const CustomerDetailCard = ({
-  customer,
-  activeFilter,
-  setActiveFilter,
-}) => {
+const CustomerDetailCard = ({ customer, activeFilter, setActiveFilter }) => {
   return (
     <div className="card h-full md:grid">
       <div className="flex justify-between flex-wrap gap-x-3 gap-y-4 p-5 h-full">
@@ -139,3 +135,5 @@ export const CustomerDetailCard = ({
     </div>
   );
 };
+
+export default CustomerDetailCard;

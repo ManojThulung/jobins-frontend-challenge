@@ -112,7 +112,7 @@ export const OrderList = [
     date: "2024-09-27",
     total: "$250.00",
     method: "PayPal",
-    status: "Pending",
+    status: "Canceled",
     action: "View Details",
   },
   {
@@ -121,7 +121,7 @@ export const OrderList = [
     date: "2024-09-26",
     total: "$75.00",
     method: "Bank Transfer",
-    status: "Pending",
+    status: "Canceled",
     action: "View Details",
   },
   {
@@ -139,7 +139,7 @@ export const OrderList = [
     date: "2024-09-24",
     total: "$500.00",
     method: "Credit Card",
-    status: "Pending",
+    status: "Canceled",
     action: "View Details",
   },
 ];

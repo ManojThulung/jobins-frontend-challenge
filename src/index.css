@@ -35,19 +35,3 @@
 .card {
   @apply bg-white rounded-[16px];
 }
-
-.logo-loading {
-  animation: logoAnimation 2s ease-in-out infinite;
-}
-
-@keyframes logoAnimation {
-  0% {
-    transform: rotate(0deg) scale(1) translateY(0); /* Start position */
-  }
-  40% {
-    transform: rotate(180deg) scale(1.2) translateY(10px); /* Half spin */
-  }
-  100% {
-    transform: rotate(360deg) scale(1) translateY(0); /* Full spin */
-  }
-}

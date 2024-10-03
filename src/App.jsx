@@ -6,19 +6,69 @@ import OrderManagement from "./pages/OrderManagement";
 import ProductList from "./pages/ProductList";
 import AddProducts from "./pages/AddProducts";
 import Brand from "./pages/Brand";
+import PageTitle from "./components/common/PageTitle";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/login" element={<Login />} />
+          <Route
+            path="/login"
+            element={
+              <>
+                <PageTitle title="Login" />
+                <Login />
+              </>
+            }
+          />
           <Route element={<PrivateRoute />}>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/order-management" element={<OrderManagement />} />
-            <Route path="/brand" element={<Brand />} />
-            <Route path="/add-products" element={<AddProducts />} />
-            <Route path="/product-list" element={<ProductList />} />
+            <Route
+              path="/"
+              element={
+                <>
+                  <PageTitle title="Dashboard" />
+                  <Dashboard />
+                </>
+              }
+            />
+            <Route
+              path="/order-management"
+              element={
+                <>
+                  <PageTitle title="Order Management" />
+                  <OrderManagement />
+                </>
+              }
+            />
+            <Route
+              path="/brand"
+              element={
+                <>
+                  <PageTitle title="Brand" />
+                  <Brand />
+                </>
+              }
+            />
+            <Route
+              path="/add-products"
+              element={
+                <>
+                  <PageTitle title="Add Products" />
+                  <AddProducts />
+                </>
+              }
+            />
+            <Route
+              path="/product-list"
+              element={
+                <>
+                  {" "}
+                  <PageTitle title="Product List" />
+                  <ProductList />
+                </>
+              }
+            />
           </Route>
         </Routes>
       </BrowserRouter>

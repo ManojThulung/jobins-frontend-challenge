@@ -13,10 +13,24 @@ export default {
           "0%": { transform: "translate(-100%, -50%)" },
           "100%": { transform: "translate(0, -50%)" },
         },
+        spin: {
+          "0%": {
+            transform:
+              "rotate(0deg) scale(1) translateY(0)" /* Start position */,
+          },
+          "40%": {
+            transform:
+              "rotate(180deg) scale(1.2) translateY(10px)" /* Half spin */,
+          },
+          "100%": {
+            transform: "rotate(360deg) scale(1) translateY(0)" /* Full spin */,
+          },
+        },
       },
       animation: {
         "slide-up": "slide-up 0.6s ease-out forwards",
-        "slide-right": "slide-right 1.5s ease-out forwards",
+        "slide-right": "slide-right 2s ease-out forwards",
+        spin: "spin 2s ease-in-out infinite",
       },
       fontFamily: {
         sans: ['"Public Sans"', "sans-serif"],
