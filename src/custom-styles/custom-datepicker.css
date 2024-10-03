@@ -1,0 +1,23 @@
+/* Styling the date picker panel (calendar) */
+.custom-calendar {
+  @apply bg-white border border-secondary-light/40 shadow-md rounded p-2.5;
+}
+
+/* Styling the header (month/year and navigation) */
+.react-datepicker__header {
+  @apply bg-gray-100 border-b border-gray-200 py-2 font-sans;
+}
+
+.react-datepicker__current-month {
+  @apply text-base font-semibold text-secondary;
+}
+
+/* Styling the day cells */
+.react-datepicker__day--today {
+  @apply border border-primary rounded;
+}
+
+/* Custom clear button */
+.react-datepicker__close-icon::after {
+  @apply bg-transparent h-9 w-9 text-secondary-light rounded-full text-2xl duration-150 ease-in transition-all hover:bg-secondary-light/10 hover:text-secondary;
+}

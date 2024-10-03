@@ -15,9 +15,12 @@ import { CustomerDetailCard } from "../components/dashboardLayout/CustomerDetail
 import CustomDropDown from "../components/dashboardLayout/CustomDropDown";
 import { SearchIcon } from "../assets/icon";
 import CustomTable from "../components/common/CustomTable";
+import CustomDatePicker from "../components/common/CustomDatePicker";
 
 const Dashboard = () => {
   const [activeFilter, setactiveFilter] = useState("All Orders");
+  const [filterDateRange, setFilterDateRange] = useState([null, null]);
+  const [startDate, endDate] = filterDateRange;
 
   return (
     <div className="animate-slide-up relative flex flex-col gap-4 w-full">
@@ -46,7 +49,7 @@ const Dashboard = () => {
       {/* Total Order Products ------------------------------- */}
       <section className="flex flex-col gap-4">
         {/* FILTER SECTION -------------------------------------- */}
-        <div className="w-full flex gap-4 justify-between">
+        <div className="w-full flex gap-4 flex-wrap justify-between">
           <div className="flex gap-4">
             <CustomDropDown
               options={StatusOptions}
@@ -59,10 +62,18 @@ const Dashboard = () => {
                 type="text"
                 name="search"
                 placeholder="Search..."
-                className="w-full xs:w-[250px] text-secondary-light outline-none pl-3 py-2 text-[15px] pr-7 rounded-[6px] shadow-sm"
+                className="w-full xs:w-[250px] text-secondary-light outline-none pl-3 py-2 text-[15px] pr-7 rounded-[6px] shadow-sm duration-150 ease-in transition-all hover:border-secondary-light/30 border-[2px] border-white"
               />
               <SearchIcon className="absolute top-[50%] right-[6px] translate-y-[-50%] cursor-pointer duration-150 ease-in text-secondary-light hover:text-secondary" />
             </div>
+          </div>
+          <div>
+            <CustomDatePicker
+              startDate={startDate}
+              endDate={endDate}
+              setDateRange={setFilterDateRange}
+              placeholder={"Filter by date range"}
+            />
           </div>
         </div>
 

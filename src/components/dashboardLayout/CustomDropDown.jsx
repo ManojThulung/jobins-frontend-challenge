@@ -15,12 +15,12 @@ const CustomDropDown = ({
 }) => {
   return (
     <div
-      className={`rounded-[6px] bg-white ${className} relative text-[13px] sm:text-[15px]`}
+      className={`rounded-[6px] h-11 bg-white ${className} relative text-[13px] sm:text-[15px]`}
     >
       <Listbox value={selected} onChange={setSelected}>
         <ListboxButton
           className={clsx(
-            "relative block w-full rounded-lg h-full bg-white py-1.5 pr-7 pl-3 text-left  text-secondary-light shadow-sm",
+            "relative block w-full rounded-lg h-full bg-white py-1.5 pr-7 pl-3 text-left  text-secondary-light shadow-sm druation-150 ease-in transition-all border-white border-[2px] hover:border-secondary-light/30 ",
             "focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25"
           )}
         >
@@ -34,7 +34,7 @@ const CustomDropDown = ({
           anchor="bottom"
           transition
           className={clsx(
-            "rounded-[5px] shadow-sm bg-white p-1 [--anchor-gap:var(--spacing-1)] focus:outline-none",
+            "rounded-[5px] shadow bg-white p-1 [--anchor-gap:var(--spacing-1)] focus:outline-none",
             "transition duration-100 ease-in data-[leave]:data-[closed]:opacity-0",
             className
           )}
