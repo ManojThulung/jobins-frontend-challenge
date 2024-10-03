@@ -1,5 +1,5 @@
 const ProductList = () => {
-  return <div>ProductList</div>;
+  return <div className="animate-slide-up">Product List</div>;
 };
 
 export default ProductList;

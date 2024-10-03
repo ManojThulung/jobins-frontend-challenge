@@ -1,4 +1,4 @@
-import React from "react";
+import CountUp from "react-countup";
 import { ChevronUpIcon } from "../../assets/icon";
 
 const CountryListCard = ({ countries }) => {
@@ -21,11 +21,11 @@ const CountryListCard = ({ countries }) => {
               </h2>
             </div>
           </div>
-          <div className="flex-grow relative">
+          <div className="flex-grow relative bg-green-400 rounded-[6px] overflow-hidden">
             <div className="h-[6px] rounded-[6px] w-full bg-primary-light" />
             <div
-              className="h-[6px] rounded-[6px] bg-primary absolute top-[50%] translate-y-[-50%]"
-              style={{ width: country.rate }}
+              className="animate-slide-right h-[6px] rounded-[6px] bg-primary absolute top-[50%] translate-y-[-50%]"
+              style={{ width: country.rate + "%" }}
             />
           </div>
           <div
@@ -36,7 +36,16 @@ const CountryListCard = ({ countries }) => {
             <ChevronUpIcon
               className={`${country.isIncrease ? "" : "rotate-180"} mr-1`}
             />
-            <p>{country.rate}</p>
+            <p>
+              <CountUp
+                start={0}
+                duration={2}
+                scrollSpyOnce={true}
+                decimals={1}
+                end={country.rate}
+              />
+              %
+            </p>
           </div>
         </div>
       ))}

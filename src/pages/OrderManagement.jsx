@@ -1,5 +1,5 @@
 const OrderManagement = () => {
-  return <div>OrderManagement</div>;
+  return <div className="animate-slide-up">Order Management</div>;
 };
 
 export default OrderManagement;

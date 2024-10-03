@@ -1,3 +1,5 @@
+import CountUp from "react-countup";
+
 export const CustomerDetailCard = ({
   customer,
   activeFilter,
@@ -63,19 +65,37 @@ export const CustomerDetailCard = ({
             <div className="py-2 flex gap-6 justify-between md:max-w-[320px]">
               <div>
                 <h2 className="text-2xl font-bold">
-                  {customer.order_detail.total_order}
+                  <CountUp
+                    start={0}
+                    duration={2}
+                    scrollSpyOnce={true}
+                    end={customer.order_detail.total_order}
+                  />
+                  {/* {customer.order_detail.total_order} */}
                 </h2>
                 <p className="text-secondary-light">Total Order</p>
               </div>
               <div>
                 <h2 className="text-2xl font-bold">
-                  {customer.order_detail.completed}
+                  <CountUp
+                    start={0}
+                    duration={2}
+                    scrollSpyOnce={true}
+                    end={customer.order_detail.completed}
+                  />
+                  {/* {customer.order_detail.completed} */}
                 </h2>
                 <p className="text-secondary-light">Completed</p>
               </div>
               <div>
                 <h2 className="text-2xl font-bold">
-                  {customer.order_detail.canceled}
+                  <CountUp
+                    start={0}
+                    duration={2}
+                    scrollSpyOnce={true}
+                    end={customer.order_detail.canceled}
+                  />
+                  {/* {customer.order_detail.canceled} */}
                 </h2>
                 <p className="text-secondary-light">Canceled</p>
               </div>

@@ -1,5 +1,5 @@
 const Brand = () => {
-  return <div>Brand</div>;
+  return <div className="animate-slide-up">Brand</div>;
 };
 
 export default Brand;

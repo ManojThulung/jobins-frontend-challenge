@@ -6,8 +6,8 @@ const LoginForm = () => {
   const [isPwVisible, setIsPwVisible] = useState(false);
   const [isError, setIsError] = useState(false);
   const [formData, setFormData] = useState({
-    username: "",
-    password: "",
+    username: "admin",
+    password: "admin",
   });
 
   const { username, password } = formData;

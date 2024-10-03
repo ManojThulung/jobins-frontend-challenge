@@ -46,21 +46,21 @@ export const CountriesReport = [
     image: USFlag,
     totalNumber: "30k",
     isIncrease: true,
-    rate: "25.8%",
+    rate: 25.8,
   },
   {
     name: "Brazil",
     image: BrFlag,
     totalNumber: "26k",
     isIncrease: false,
-    rate: "16.2%",
+    rate: 16.2,
   },
   {
     name: "Australia",
     image: AuFlag,
     totalNumber: "17k",
     isIncrease: false,
-    rate: "11.9%",
+    rate: 11.9,
   },
 ];
 

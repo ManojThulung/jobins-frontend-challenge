@@ -1,9 +1,15 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { LogoutIcon, ProfileIcon, SettingIcon } from "../../assets/icon";
-import { NotificationList } from "../../constant";
+import { useNavigate } from "react-router-dom";
 
 const Profile = () => {
-  const notificationNumber = NotificationList.length;
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.removeItem("isLoggedIn");
+    navigate("/login");
+  };
+
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
@@ -41,6 +47,7 @@ const Profile = () => {
           </MenuItem>
           <MenuItem
             as="div"
+            onClick={handleLogout}
             className="py-2 px-5 hover:bg-secondary-light/5 cursor-pointer"
           >
             <h2 className="font-semibold flex items-center gap-2">
