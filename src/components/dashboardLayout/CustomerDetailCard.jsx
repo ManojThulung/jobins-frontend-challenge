@@ -21,22 +21,22 @@ const CustomerDetailCard = ({ customer, activeFilter, setActiveFilter }) => {
 
         <div className="w-full sm:w-[50%] md:w-[32%] text-[13px] flex sm:justify-center">
           <div>
-            <h2 className="font-[500] uppercase text-secondary-light pb-1">
+            <h2 className="font-[500] uppercase text-secondary-light pb-1.5">
               PERSONAL INFORMATION
             </h2>
-            <div className="flex flex-wrap gap-x-2 sm:gap-x-0 lg:gap-x-2 items-center py-1">
+            <div className="flex flex-wrap gap-x-2 sm:gap-x-0 lg:gap-x-2 items-center py-1.5">
               <p className="w-28">Contact Number</p>
               <p className="flex-grow font-semibold">
                 {customer.personal_info.contact_no}
               </p>
             </div>
-            <div className="flex flex-wrap gap-x-2 sm:gap-x-0 lg:gap-x-2 items-center py-1">
+            <div className="flex flex-wrap gap-x-2 sm:gap-x-0 lg:gap-x-2 items-center py-1.5">
               <p className="w-28">Date of Birth</p>
               <p className="flex-grow font-semibold">
                 {customer.personal_info.dob}
               </p>
             </div>
-            <div className="flex flex-wrap gap-x-2 sm:gap-x-0 lg:gap-x-2 items-center py-1">
+            <div className="flex flex-wrap gap-x-2 sm:gap-x-0 lg:gap-x-2 items-center py-1.5">
               <p className="w-28">Member Since</p>
               <p className="flex-grow font-semibold">
                 {customer.personal_info.join_member_date}
@@ -48,17 +48,17 @@ const CustomerDetailCard = ({ customer, activeFilter, setActiveFilter }) => {
         {/* Vertical line ---------- */}
         <div className="hidden md:block h-full w-[1px] bg-secondary-light/50 rounded-[2px]" />
 
-        <div className="w-full md:w-[30%] text-[13px] max-w-[800px]">
+        <div className="w-full md:w-[30%] text-[13px] max-w-[800px] border-t-[1px] border-t-secondary-light/50 md:border-none pt-3 md:pt-0">
           <div className="flex justify-between flex-col sm:flex-row md:flex-col">
             <div className="">
-              <h2 className="font-[500] uppercase text-secondary-light pb-1">
+              <h2 className="font-[500] uppercase text-secondary-light pb-1.5">
                 SHIPPING ADDRESS
               </h2>
               <div className="flexitems-center">
-                <p className="py-1">{customer.shipping_address}</p>
+                <p className="py-1.5">{customer.shipping_address}</p>
               </div>
             </div>
-            <div className="py-2 flex gap-6 justify-between md:max-w-[320px]">
+            <div className="py-3 flex gap-6 justify-between md:max-w-[320px]">
               <div>
                 <h2 className="text-2xl font-bold">
                   <CountUp
