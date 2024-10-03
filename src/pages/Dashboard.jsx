@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { SearchIcon } from "../assets/icon";
 import CustomDatePicker from "../components/common/CustomDatePicker";
 import CustomTable from "../components/common/CustomTable";
@@ -32,7 +32,7 @@ const Dashboard = () => {
 
   return (
     <div className="animate-slide-up relative flex flex-col gap-4 w-full">
-      {/* Top section -------------- */}
+      {/* TOP Statistic sections -------------- */}
       <section className="grid grid-cols-1 sm:grid-cols-5 lg:grid-cols-8 gap-4">
         <div className="col-span-1 sm:col-span-3">
           <TotalSalesCard sales={TotalSalesReprot[0]} />
@@ -45,7 +45,7 @@ const Dashboard = () => {
         </div>
       </section>
 
-      {/* CUSTOMER DETAIL & SHIPPING INFO ------------------------------- */}
+      {/* CUSTOMER DETAIL & SHIPPING INFO section ------------------------------- */}
       <section>
         <CustomerDetailCard
           customer={CustomerDetail}
@@ -54,7 +54,7 @@ const Dashboard = () => {
         />
       </section>
 
-      {/* Total Order Products ------------------------------- */}
+      {/* Total Order Products Table list ------------------------------- */}
       <section className="flex flex-col gap-4">
         {/* FILTER SECTION -------------------------------------- */}
         <div className="w-full flex gap-4 flex-wrap justify-between">

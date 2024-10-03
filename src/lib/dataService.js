@@ -1,5 +1,6 @@
 import { OrderList } from "../constant";
 
+// get Order list data to dashboard table
 export const getOrderList = (status, search) => {
   let sortOrderList = [];
   let searchOrderList = [];

@@ -1,6 +1,6 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
-import { LogoutIcon, ProfileIcon, SettingIcon } from "../../assets/icon";
 import { useNavigate } from "react-router-dom";
+import { LogoutIcon, ProfileIcon, SettingIcon } from "../../assets/icon";
 
 const Profile = () => {
   const navigate = useNavigate();

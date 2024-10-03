@@ -34,7 +34,6 @@ const Pagination = () => {
                 className="h-5 w-5 -rotate-90"
               />
             </a>
-            {/* Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default:  text-secondary-light hover:bg-primary/5 duration-150 ease-in" */}
             <a
               href="#"
               aria-current="page"

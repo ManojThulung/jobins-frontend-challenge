@@ -33,6 +33,7 @@ const CustomTable = ({ tableHeader, children }) => {
           <tbody>{children}</tbody>
         </table>
       </div>
+
       {/* TABLE FOOTER -------------------------------------------------------- */}
       <div className="p-4 text-secondary-light flex justify-between flex-wrap gap-2">
         <div className="hidden sm:flex items-center gap-2">
@@ -45,6 +46,7 @@ const CustomTable = ({ tableHeader, children }) => {
           />
           <p> of 50</p>
         </div>
+
         <div className="flex-1">
           <Pagination />
         </div>

@@ -1,3 +1,7 @@
+.date-input {
+  @apply w-full xs:w-[260px] text-secondary-light outline-none px-3 py-2 text-[15px] rounded-[6px] shadow-sm duration-150 ease-in transition-all hover:border-secondary-light/30 border-[2px] border-white;
+}
+
 /* Styling the date picker panel (calendar) */
 .custom-calendar {
   @apply bg-white border border-secondary-light/40 shadow-md rounded p-2.5;
