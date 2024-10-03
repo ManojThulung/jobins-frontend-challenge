@@ -16,6 +16,7 @@ import YenIcon from "./Icons/yen.svg?react";
 import ArrowUpIcon from "./Icons/arrow-up.svg?react";
 import ChevronUpIcon from "./Icons/chevron-up.svg?react";
 import SearchIcon from "./Icons/search.svg?react";
+import MenuIcon from "./Icons/menu.svg?react";
 
 export {
   Logo,
@@ -36,4 +37,5 @@ export {
   ArrowUpIcon,
   ChevronUpIcon,
   SearchIcon,
+  MenuIcon,
 };

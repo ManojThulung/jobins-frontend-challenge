@@ -13,25 +13,26 @@ const CustomTable = ({ tableHeader, children }) => {
   const [perPage, setPerPage] = useState(10);
 
   return (
-    <div className="card py-2 relative overflow-x-auto text-[13px] sm:text-[15px]">
-      <table className="min-w-[1080px] w-full bg-white">
-        <thead>
-          <tr className="border-b-[1px] border-b-primary-light ">
-            {tableHeader.map((header, index) => (
-              <th
-                key={header}
-                className={`py-3 px-3 text-[13px] font-[500] uppercase text-start text-secondary-light ${
-                  index === 0 ? "pl-6" : ""
-                } ${index === tableHeader.length - 1 ? "pr-6" : ""}`}
-              >
-                {header}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>{children}</tbody>
-      </table>
-
+    <div className="card py-2">
+      <div className="card relative overflow-x-auto text-[13px] sm:text-[15px]">
+        <table className="min-w-[1080px] w-full bg-white">
+          <thead>
+            <tr className="border-b-[1px] border-b-primary-light ">
+              {tableHeader.map((header, index) => (
+                <th
+                  key={header}
+                  className={`py-3 px-3 text-[13px] font-[500] uppercase text-start text-secondary-light ${
+                    index === 0 ? "pl-6" : ""
+                  } ${index === tableHeader.length - 1 ? "pr-6" : ""}`}
+                >
+                  {header}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>{children}</tbody>
+        </table>
+      </div>
       {/* TABLE FOOTER -------------------------------------------------------- */}
       <div className="p-4 text-secondary-light flex justify-between flex-wrap gap-2">
         <div className="hidden sm:flex items-center gap-2">

@@ -1,11 +1,7 @@
 import CustomDropDown from "../components/dashboardLayout/CustomDropDown";
 
 const AddProducts = () => {
-  return (
-    <div>
-      <CustomDropDown />
-    </div>
-  );
+  return <div>Add Products</div>;
 };
 
 export default AddProducts;

@@ -17,10 +17,10 @@ import { SearchIcon } from "../assets/icon";
 import CustomTable from "../components/common/CustomTable";
 
 const Dashboard = () => {
-  const [activeFilter, setactiveFilter] = useState("all-orders");
+  const [activeFilter, setactiveFilter] = useState("All Orders");
 
   return (
-    <div className="relative flex flex-col gap-4">
+    <div className="relative flex flex-col gap-4 w-full">
       {/* Top section -------------- */}
       <section className="grid grid-cols-1 sm:grid-cols-5 lg:grid-cols-8 gap-4">
         <div className="col-span-1 sm:col-span-3">

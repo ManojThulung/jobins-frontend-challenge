@@ -1,14 +1,12 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
-import Navbar from "./Navbar";
+import Sidebar from "./Sidebar";
 
 const Layout = () => {
   return (
-    <div className="w-screen relative min-h-screen flex flex-row bg-light text-secondary">
-      <div className="bg-white h-screen">
-        <Navbar />
-      </div>
-      <div className="flex-grow w-full px-6 py-4">
+    <div className="relative min-h-screen flex flex-row bg-light text-secondary overflow-hidden">
+      <Sidebar />
+      <div className="flex-1 w-full px-6 py-4 pb-10 overflow-hidden">
         <Header />
         <Outlet />
       </div>
