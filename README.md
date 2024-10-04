@@ -24,7 +24,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/manojthulung03/jobins-frontend-challenge.git
+   git clone https://github.com/ManojThulung/jobins-frontend-challenge.git
    ```
 2. Navigate into the project directory:
    ```bash
