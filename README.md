@@ -2,7 +2,7 @@
 
 This project is an interactive web page developed as part of the JoBins frontend coding challenge. The page was designed based on a Figma file and built using **React.js** and **Tailwind CSS**, following the provided design and coding guidelines.
 
-### [Live Demo](#) - url
+### [Live Demo](https://jobins-frontend-challenge-mj.vercel.app/) - [url](https://jobins-frontend-challenge-mj.vercel.app/)
 
 ## 1. Project Introduction
 
@@ -35,6 +35,10 @@ To run this project locally, follow these steps:
    npm install
    ```
 4. Start the development server:
+    ```bash
+   npm run dev
+   ```
+   The app should now be running on http://localhost:5173
 
 ## 3. Project Structure
 
@@ -57,7 +61,7 @@ jobins-frontend-challenge/
 │   ├── hooks/
 │   │   └── useAuth.js                    # Authentication hook
 │   ├── lib/
-│   │   ├── dataService.js                # Handles data fetcor dashboard order list
+│   │   ├── dataService.js                # Handles customer order list data in dashboard table
 │   │   └── helper.js                     # Helper functions used across the project
 │   ├── pages/                            # Main files for each page
 │   ├── App.jsx                           # Main app component
